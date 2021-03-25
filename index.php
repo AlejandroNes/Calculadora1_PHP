@@ -67,7 +67,7 @@ if (isset($_POST['operacion'])) {
     <hr class="bg-info mb-3">
     <div class="container">
         <div class="row">
-            <div class="contenido col-8 offset-2 rounded mt-5">
+            <div class="contenido col-8 offset-2 rounded mt-5 border border-info">
                 <h3 class="text-center text-info m-4">Calculadora</h3>
 
                 <form method="POST" action="<?php echo $_SERVER['PHP_SELF'] ?>">
@@ -87,10 +87,10 @@ if (isset($_POST['operacion'])) {
 
                 <div>
                     <?php if (!empty($errores)) : ?>
-                        <h4 class="text-center text-danger"><?php echo $errores; ?></h4>
+                        <h4 class="text-center text-danger p-2 my-3 border border-danger "><?php echo $errores; ?></h4>
 
                     <?php elseif (!empty($resultado)) : ?>
-                        <h4 class="text-center text-info"><?php echo $resultado; ?></h4>
+                        <h4 class="text-center text-info p-2 my-3 border border-info "><?php echo $resultado; ?></h4>
                     <?php endif; ?>
                 </div>
             </div>
